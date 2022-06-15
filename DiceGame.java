@@ -1,13 +1,24 @@
+//Meghna Aravind A00256942
+//Athul Babu A00244116
+// JAV1001 Lab 3
+//Program to demonstrate classes and objects
+
+
+
+
 import java.text.DateFormatSymbols;
+
+
+
 
 public class DiceGame{
 
 public static void main(String[] args) {
     System.out.println("Creating a default d6");
-    Die defaultdied6= new Die();
-    Die d20die= new Die(20);
+    Die defaultdied6= new Die(); // No parameter constructor
+    Die d20die= new Die(20);//Constructor with one param
     System.out.println("Creating a percentile die");
-    Die percentile= new Die(10,"Percentile");
+    Die percentile= new Die(10,"Percentile"); //Constructor with two params
 
 
     System.out.println("Current side up of d6 is "+defaultdied6.getCurrentSideUp());
@@ -36,7 +47,7 @@ public static void main(String[] args) {
     System.out.println("The side up is now 20 finally.");
 
     System.out.println("\nBonus\n");
-    BonusMethod();
+    BonusMethod(); // new method to do the bonus stuff
     
 }
 static void BonusMethod(){
