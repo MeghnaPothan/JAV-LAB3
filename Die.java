@@ -32,7 +32,7 @@ public class Die {
     {
        
         Random rand = new Random(); // calling the random function to get a random number  and assinging it to rand variable 
-        CurrentSideUp= rand.nextInt(DieSides)+1;
+        CurrentSideUp= rand.nextInt(DieSides)+1;// to remove 0
        
 
     }
